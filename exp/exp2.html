@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // This program asks the user for their favorite color from a list and changes the background color of the page based on their choice.
+        const colors = ["red", "blue", "green", "yellow", "purple", "pink", "orange"];
+    
+        
+        function askForColor() {
+            let favoriteColor = prompt(`Please enter your favorite color from the following list: ${colors.join(", ")}`);
+            return favoriteColor.toLowerCase();
+        }
+        function changeBackgroundColor(color) {
+            if (colors.includes(color)) {
+                document.body.style.backgroundColor = color;
+                document.getElementById('colorOutput').textContent = `You chose ${color}!`;
+            } else {
+                document.getElementById('colorOutput').textContent = `Sorry, ${color} is not in the list. Try again!`;
+            }
+        }
+    
+        function main() {
+            let userColor = askForColor(); 
+            changeBackgroundColor(userColor); 
+        }
+            main();
+    </script>
+</body>
+</html>
