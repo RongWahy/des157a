@@ -1,0 +1,139 @@
+/* Reset and Normalize */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px; /* Center and limit width of the main container */
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Navbar styles */
+header {
+    background-color: #2b4e99;
+    color: white;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-right: 1rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #fcd200;
+}
+
+/* Post styles */
+main .post {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align text */
+}
+
+main .post h2 {
+    font-size: 1.8rem;
+    color: #2b4e99;
+    margin-bottom: 0.5rem;
+}
+
+main .post time {
+    color: #666;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+main .post p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #2b4e99;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #fcd200;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2b4e99;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fcd200;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('825d621242b01bd624ac265e9bfab5690a701133_2000x2000.jpg'); /* Relative path to the local image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Adjust the blur level */
+    z-index: -1;
+    opacity: 0.6; /* Adjust opacity to make it subtle */
+}
+
